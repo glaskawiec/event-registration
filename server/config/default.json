@@ -1,0 +1,5 @@
+{
+    "mongoDbConnectionString": "mongodb://localhost:27017/eventRegistration",
+    "port": 5000,
+    "logPath": "./logs/info.log"
+}

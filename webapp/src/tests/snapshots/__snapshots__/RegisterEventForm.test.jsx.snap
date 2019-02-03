@@ -1,0 +1,102 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RegisterEventForm snapshot 1`] = `
+<form
+  className=""
+  onSubmit={[Function]}
+>
+  <div
+    className="form-group"
+  >
+    <label
+      className="form-label"
+    >
+      First Name
+    </label>
+    <input
+      className="form-control"
+      name="firstName"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onDragStart={[Function]}
+      onDrop={[Function]}
+      onFocus={[Function]}
+      value=""
+    />
+  </div>
+  <div
+    className="form-group"
+  >
+    <label
+      className="form-label"
+    >
+      Last Name
+    </label>
+    <input
+      className="form-control"
+      name="lastName"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onDragStart={[Function]}
+      onDrop={[Function]}
+      onFocus={[Function]}
+      value=""
+    />
+  </div>
+  <div
+    className="form-group"
+  >
+    <label
+      className="form-label"
+    >
+      Email
+    </label>
+    <input
+      className="form-control"
+      name="email"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onDragStart={[Function]}
+      onDrop={[Function]}
+      onFocus={[Function]}
+      value=""
+    />
+  </div>
+  <div
+    className="form-group"
+  >
+    <label
+      className="form-label"
+    >
+      Date
+    </label>
+    <div
+      className="react-datepicker-wrapper"
+    >
+      <div
+        className="react-datepicker__input-container"
+      >
+        <input
+          autocomplete="nope"
+          className="form-control"
+          disabled={false}
+          onBlur={[Function]}
+          onChange={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          readOnly={false}
+          value=""
+        />
+      </div>
+    </div>
+  </div>
+  <button
+    className="btn btn-primary"
+    disabled={false}
+    type="submit"
+  >
+    Register
+  </button>
+</form>
+`;

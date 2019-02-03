@@ -1,0 +1,36 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./src/index.js",
+    "dev": "nodemon ./src/index.js",
+    "test": "mocha ./src/test/*.js --exit",
+    "coverage": "nyc mocha ./src/test/*.js --exit"
+  },
+  "author": "Gilbert Laskawiec",
+  "license": "ISC",
+  "dependencies": {
+    "boom": "^7.3.0",
+    "config": "^3.0.1",
+    "fastify": "^1.13.4",
+    "fastify-cors": "^1.0.0",
+    "fastify-swagger": "^1.1.0",
+    "joi": "^14.3.1",
+    "joi-to-json-schema": "^3.5.0",
+    "mongoose": "^5.4.6",
+    "pino": "^5.11.1"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "chai-http": "^4.2.1",
+    "eslint": "^5.12.1",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.15.0",
+    "eslint-plugin-mocha": "^5.2.1",
+    "mocha": "^5.2.0",
+    "nodemon": "^1.18.9",
+    "nyc": "^13.1.0"
+  }
+}

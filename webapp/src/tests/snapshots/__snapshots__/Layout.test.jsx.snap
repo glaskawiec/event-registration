@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Layout snapshot 1`] = `
+<div
+  className="center container-fluid"
+>
+  <div
+    className="d-flex justify-content-center row"
+  >
+    <div
+      className="col-xl-4 col-lg-5 col-md-5 col-sm-7"
+    >
+      <h1
+        style={
+          Object {
+            "margin": 30,
+            "textAlign": "center",
+          }
+        }
+      >
+        Event Registration
+      </h1>
+      <div>
+        Snapshot
+      </div>
+    </div>
+  </div>
+</div>
+`;
