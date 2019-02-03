@@ -1,4 +1,5 @@
-
+const fastifyCompress = require('fastify-compress');
+const fastifyHelmet = require('fastify-helmet');
 const fastifySwagger = require('fastify-swagger');
 const mongoose = require('mongoose');
 const pino = require('pino');
@@ -10,7 +11,7 @@ const fastify = require('fastify')({ logger });
 const swaggerOptions = require('./utils/swaggerOptions');
 const routes = require('./routes');
 
-const start = async () => {
+(async () => {
   try {
     const port = config.get('port');
     const mongoDbConnectionString = config.get('mongoDbConnectionString');
@@ -21,6 +22,8 @@ const start = async () => {
 
     await mongoose.connect(mongoDbConnectionString, connectionOptions);
     await fastify.register(fastifyCors);
+    await fastify.register(fastifyHelmet);
+    await fastify.register(fastifyCompress);
     await fastify.register(fastifySwagger, swaggerOptions);
 
     routes.forEach((route) => {
@@ -33,7 +36,6 @@ const start = async () => {
     console.log(err);
     process.exit(1);
   }
-};
-start();
+})();
 
 module.exports = fastify.server;
