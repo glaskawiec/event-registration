@@ -1,5 +1,4 @@
-import 'react-datepicker/dist/react-datepicker.css';
-import './styles/react-datepicker-override.css';
+import 'react-widgets/dist/css/react-widgets.css'
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';

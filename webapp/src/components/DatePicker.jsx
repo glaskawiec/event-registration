@@ -1,21 +1,21 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Form } from 'react-bootstrap';
-import ReactDatePicker from 'react-datepicker';
 import ValidationBadge from '../components/ValidationBadge';
+import DateTimePicker from 'react-widgets/lib/DateTimePicker'
 
 const DatePicker = (props) => (
   <>
-    <ReactDatePicker
+    <DateTimePicker
+      onChange={props.input.onChange}
       onFocus={props.input.onFocus}
       onBlur={props.input.onBlur}
-      onChange={props.input.onChange}
-      customInput={<Form.Control autocomplete="nope" />}
-      selected={props.input.value ? new Date(props.input.value) : null}
+      format="DD MMM YYYY"
+      time={false}
+      value={!props.input.value ? null : new Date(props.input.value)}
     />
     <ValidationBadge
       touched={props.meta.touched}
-      error={props.meta.error} />  
+      error={props.meta.error} />
   </>
 )
 

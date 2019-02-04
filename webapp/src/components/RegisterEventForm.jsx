@@ -7,8 +7,15 @@ import TextInput from './TextInput';
 import { email, required } from '../utils/validations';
 import { connect } from 'react-redux';
 import { createEvent } from '../redux/actions/request';
-
+import Moment from 'moment'
+import momentLocalizer from 'react-widgets-moment';
 export class RegisterEventForm extends React.Component {
+  constructor(props) {
+    super(props);
+    Moment.locale('en');
+    momentLocalizer();
+  }
+
   onSubmit = (formData) => {
     const { dispatch } = this.props;
     dispatch(createEvent(formData));

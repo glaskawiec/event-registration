@@ -71,23 +71,48 @@ exports[`RegisterEventForm snapshot 1`] = `
       Date
     </label>
     <div
-      className="react-datepicker-wrapper"
+      className="rw-datetime-picker rw-widget"
+      onBlur={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onKeyPress={[Function]}
+      tabIndex="-1"
     >
       <div
-        className="react-datepicker__input-container"
+        className="rw-widget-picker rw-widget-container"
       >
         <input
-          autocomplete="nope"
-          className="form-control"
-          disabled={false}
+          aria-activedescendant={null}
+          aria-expanded={false}
+          aria-haspopup={true}
+          aria-owns=""
+          autoComplete="off"
+          className="rw-widget-input rw-input"
+          id="rw_1_input"
           onBlur={[Function]}
           onChange={[Function]}
-          onClick={[Function]}
-          onFocus={[Function]}
-          onKeyDown={[Function]}
-          readOnly={false}
+          role="combobox"
+          tabIndex="0"
+          type="text"
           value=""
         />
+        <span
+          className="rw-select rw-select-bordered"
+        >
+          <button
+            aria-label="Select date"
+            className="rw-btn rw-btn-select"
+            onClick={[Function]}
+            tabIndex="-1"
+            title="Select date"
+            type="button"
+          >
+            <span
+              aria-hidden="true"
+              className="rw-i rw-i-calendar"
+            />
+          </button>
+        </span>
       </div>
     </div>
   </div>
