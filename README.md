@@ -87,4 +87,4 @@ npm test
 
 ---
 
-##### glaskawiec - 2019 - MIT license_
+##### glaskawiec © 2019 - MIT license
