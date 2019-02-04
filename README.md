@@ -4,8 +4,7 @@ The main objective is to make a registration form for the event using React, Red
   
 At the beginning I would like to point out that the application may seem to be over engineered.  
 I tried to create some kind of boilerplate that can be used in any JS client-server application.  
-I realize that it could be done in a simpler and faster way but that was not my goal.  
-My goal was to show knowledge of various libraries and aspects of client-server architecture.  
+My goal was to show knowledge of various libraries and aspects of architecture.  
 
 
 ## :bookmark_tabs: Goals
