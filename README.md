@@ -1,15 +1,14 @@
 ##  :raising_hand: Introduction
+This repository was created for recruitment task for the Fullstack JavaScript Developer job at Brainhub.  
+The main objective is to make a registration form for the event using React, Redux, Node and MongoDB.  
+  
+At the beginning I would like to point out that the application may seem to be over engineered.  
+I tried to create some kind of boilerplate that can be used in any JS client-server application.  
+I realize that it could be done in a simpler and faster way but that was not my goal.  
+My goal was to show knowledge of various libraries and aspects of client-server architecture.  
 
-At the beginning I would like to point out that the application may seem to be over engineered.
-I tried to create some kind of boilerplate used in these types of applications.
-I realize that it could be done in a simpler and faster way but that was not my goal.
 
-## Purpose
-
-This repository was created for recruitment task for the Fullstack JavaScript Developer position at Braihub.
-The main objective is to make a registration form for the event using React, Redux, Node and MongoDB.
-
-## Goals
+## :bookmark_tabs: Goals
 
 *  frontend app should be written in React
 *  frontend app should use Redux
@@ -17,6 +16,28 @@ The main objective is to make a registration form for the event using React, Red
 *  data from form should be validated before saving
 *  errors should be handled and displayed for the user
 *  app must be tested
+
+## :pencil: Prerequisites
+
+*  [Git](https://git-scm.com) installed
+*  [Mongo DB](https://www.mongodb.com) installed & running
+*  [Node.js](https://nodejs.org/en/) installed
+*  [NPM](https://www.npmjs.com/) installed
+
+## :hammer: Installation
+Open you fav terminal and type:
+```
+git clone https://github.com/glaskawiec/eventRegistration.git
+cd eventRegistration/server
+npm install
+npm start
+```
+Open new terminal tab in project root folder and type:
+```
+cd webapp
+npm install
+npm start
+```
 
 ## :rocket: Server
 Backend part of app is powerded by `fastify`.  
@@ -43,7 +64,7 @@ Code linting by `eslint`, `airbnb`.
 http://localhost:5000/documentation
 ```
 
-##### :white_check_mark: 90% CODE COVERAGE TESTS
+##### :white_check_mark: TESTS
 ```
 cd server
 npm test
@@ -58,38 +79,12 @@ Form validations implemented with the help of `validator`.
 HTTP requests are supported by async redux actions enabled by `redux-thunk`.  
 App snapshots, unit tests, redux tests are powered by `jest`, `enzyme`, `chai`.
 
-##### :white_check_mark: 90% CODE COVERAGE TESTS
+##### :white_check_mark: TESTS
 ```
 cd webapp
 npm test
 ```
 ![alt text](https://i.ibb.co/jVm3kw5/Capture2.png "Tests Screen")
-
-## Prerequisites
-
-*  [Git](https://git-scm.com) installed
-*  [Mongo DB](https://www.mongodb.com) installed & running
-*  [Node.js](https://www.mongodb.com) installed
-
-## :hammer: Installation
-Open you fav terminal and type:
-```
-git clone https://github.com/glaskawiec/eventRegistration.git
-cd eventRegistration/server
-npm install
-npm start
-```
-Open new terminal tab in project root folder and type:
-```
-cd webapp
-npm install
-npm start
-```
-
-
-## Configuration
-
-
 
 ---
 
